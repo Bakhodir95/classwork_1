@@ -156,7 +156,7 @@ class ClassApp extends StatelessWidget {
                               image: NetworkImage(
                                 "https://media.istockphoto.com/id/964163202/photo/young-handsome-hispanic-man-against-green-background.jpg?s=612x612&w=0&k=20&c=mvdrdVwFDEPDlv6vRdm_wdB5Q7e1UFb-U1lCek26ZY4=",
                               ),
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                             ),
                           ),
                           child: const Column(
