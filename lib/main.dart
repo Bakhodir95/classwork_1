@@ -147,8 +147,9 @@ class ClassApp extends StatelessWidget {
                     return Column(
                       children: [
                         Container(
+                          padding: EdgeInsets.all(20),
                           width: double.infinity,
-                          height: 250,
+                          height: 350,
                           clipBehavior: Clip.hardEdge,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
@@ -159,13 +160,16 @@ class ClassApp extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          child: const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Men's fashion Collection"),
-                              Text("Discount up to :80%")
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
+                            child: const Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Men's fashion Collection"),
+                                Text("Discount up to :80%")
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(height: 10),
